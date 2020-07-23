@@ -32,7 +32,7 @@ class TinyClipbord {
             this.copyList.push(text)
             callback && callback()
         } else {
-            callback && callback(new Error('[tiny-copy] copy fail'))
+            callback && callback(new Error('[tiny-clipbord] copy fail'))
         }
     }
     getHistory() {
