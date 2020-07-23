@@ -10,7 +10,7 @@ export default {
         {
             file: pkg.main,
             format: 'umd',
-            name: 'TinyCopy',
+            name: 'TinyClipbord',
         },
         {
             file: pkg.module,

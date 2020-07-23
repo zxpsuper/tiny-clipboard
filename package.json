@@ -1,10 +1,10 @@
 {
-    "name": "tiny-copy",
+    "name": "tiny-clipbord",
     "version": "0.0.1",
     "description": "a text copy library",
-    "main": "libs/TinyCopy.umd.js",
-    "mainMin": "libs/TinyCopy.umd.min.js",
-    "module": "libs/TinyCopy.es5.js",
+    "main": "libs/tiny-clipbord.umd.js",
+    "mainMin": "libs/tiny-clipbord.umd.min.js",
+    "module": "libs/tiny-clipbord.es5.js",
     "devDependencies": {
         "@babel/core": "^7.0.0",
         "@babel/preset-env": "^7.10.1",
@@ -41,7 +41,7 @@
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/zxpsuper/tiny-copy.git"
+        "url": "git+https://github.com/zxpsuper/tiny-clipbord.git"
     },
     "author": "zxpsuper",
     "license": "ISC"

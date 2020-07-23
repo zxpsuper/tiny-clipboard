@@ -1,4 +1,4 @@
-# tiny-copy
+# tiny-clipbord
 
 ## Introduction
 
@@ -14,43 +14,43 @@
 
 ```
 # install
-npm install tiny-copy --save
+npm install tiny-clipbord --save
 ```
 
 ```js
-import TinyCopy from 'tiny-copy'
+import TinyClipbord from 'tiny-clipbord'
 
-TinyCopy.copy(text, callback)
+TinyClipbord.copy(text, callback)
 ```
 
 or you can use it by script tag
 
 ```html
-<script src="https://unpkg.com/tiny-copy@0.0.1/libs/TinyCopy.umd.min.js"></script>
+<script src="https://unpkg.com/tiny-clipbord@0.0.1/libs/tiny-clipbord.umd.min.js"></script>
 <script>
-   TinyCopy.copy(text, callback) 
+   TinyClipbord.copy(text, callback) 
 </script>
 ```
 
 ## Methods
 
-- `TinyCopy.copy(text, callback)`
+- `TinyClipbord.copy(text, callback)`
 
     - text: the text you want to copy
 
     - callback(error ?) After copying successfully it will be run, and when appear error that will throw the error
 
-- `TinyCopy.getHistory()`
+- `TinyClipbord.getHistory()`
 
     - return String[], the history that you have copied
 
-- `TinyCopy.clearHistroy()` clear the history
+- `TinyClipbord.clearHistroy()` clear the history
 
 ## Browser Support
 
 ![Chrome](https://raw.github.com/alrra/browser-logos/master/src/chrome/chrome_48x48.png) | ![Firefox](https://raw.github.com/alrra/browser-logos/master/src/firefox/firefox_48x48.png) | ![Safari](https://raw.github.com/alrra/browser-logos/master/src/safari/safari_48x48.png) | ![Opera](https://raw.github.com/alrra/browser-logos/master/src/opera/opera_48x48.png) | ![Edge](https://raw.github.com/alrra/browser-logos/master/src/edge/edge_48x48.png) | <img src="https://clipboardjs.com/assets/images/ie.png" width="48px" height="48px" alt="Internet Explorer logo">|
 --- | --- | --- | --- | --- |--- |
-42+ ✔ | 41+ ✔ | 10+ ✔ | 29+ ✔ | 12+ ✔ |9+ ✔ |
+42+ ✔ | 41+ ✔ | 10+ ✔ | 29+ ✔ | 12+ ✔ | 9+ ✔ |
 
 ## Contributing
 

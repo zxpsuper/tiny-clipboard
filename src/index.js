@@ -1,4 +1,4 @@
-class TinyCopy {
+class TinyClipbord {
     constructor() {
         this.copyList = []
         this.element = document.createElement('textarea')
@@ -43,4 +43,4 @@ class TinyCopy {
     }
 }
 
-export default new TinyCopy()
+export default new TinyClipbord()
