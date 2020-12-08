@@ -27,7 +27,7 @@ TinyClipbord.copy(text, callback)
 or you can use it by script tag
 
 ```html
-<script src="https://unpkg.com/tiny-clipbord@0.0.1/libs/tiny-clipbord.umd.min.js"></script>
+<script src="https://unpkg.com/tiny-clipbord@0.0.2/libs/tiny-clipbord.umd.min.js"></script>
 <script>
    TinyClipbord.copy(text, callback) 
 </script>
