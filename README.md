@@ -2,13 +2,14 @@
 
 ## Introduction
 
-> A tiny copy to clipboard library, without any dependence. It is small(only 1.3k) and Simple to use in javascript.
+> A tiny copy to clipboard library, without any dependence. It is small(only 1.04k) and Simple to use in javascript.
 
 ## Features
 
 -   small
 -   simple
 -   useful
+-   support typescript
 
 ## Usage
 

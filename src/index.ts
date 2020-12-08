@@ -1,10 +1,16 @@
+import { version } from '../package.json'
+
 class TinyClipbord {
+    copyList: string[]
+    element: HTMLTextAreaElement
+    version: string = version
+    TinyClipbord = TinyClipbord
     constructor() {
         this.copyList = []
         this.element = document.createElement('textarea')
         this.init()
     }
-    init() {
+    private init() {
         // Text direction is right to left or not
         // 判断文本方向是不是从右到左
         const isRTL = document.documentElement.getAttribute('dir') == 'rtl'; 
@@ -23,7 +29,7 @@ class TinyClipbord {
         // It can not be select when the element is not in dom or the attribute of display is none in ie and edge browser 
         document.body.appendChild(this.element)
     }
-    copy(text, callback) {
+    public copy(text: string, callback: (err?: Error) => void) {
         this.element.innerText = text
         this.element.select();
         if (document.execCommand('copy')) {
@@ -35,10 +41,10 @@ class TinyClipbord {
             callback && callback(new Error('[tiny-clipbord] copy fail'))
         }
     }
-    getHistory() {
+    public getHistory() {
         return this.copyList
     }
-    clearHistroy() {
+    public clearHistroy() {
         this.copyList.length = 0
     }
 }

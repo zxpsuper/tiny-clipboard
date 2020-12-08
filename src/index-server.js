@@ -1,5 +1,7 @@
 // import TinyClipbord from './index'
-import TinyClipbord from '../libs/tiny-clipbord.es5.js'
+import TinyClipbord from '../libs/tiny-clipbord.umd.min'
+
+console.log(TinyClipbord.version)
 window.copy = function () {
     let text = document.getElementById('textarea').value
     TinyClipbord.copy(text, err => {
