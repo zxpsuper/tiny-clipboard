@@ -1,10 +1,10 @@
 // import TinyClipbord from './index'
-import TinyClipbord from '../libs/tiny-clipbord.umd.min'
+import TinyClipboard from '../libs/tiny-clipboard.umd.min'
 
-console.log(TinyClipbord.version)
+console.log(TinyClipboard.version)
 window.copy = function () {
     let text = document.getElementById('textarea').value
-    TinyClipbord.copy(text, err => {
+    TinyClipboard.copy(text, err => {
         if (err) console.log(err)
         else {
             console.log('复制成功', text)

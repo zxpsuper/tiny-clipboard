@@ -1,12 +1,12 @@
 {
   "name": "tiny-clipboard",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "a text copy library",
-  "main": "libs/tiny-clipbord.umd.js",
-  "mainMin": "libs/tiny-clipbord.umd.min.js",
-  "jsdelivr": "libs/tiny-clipbord.umd.min.js",
-  "unpkg": "libs/tiny-clipbord.umd.min.js",
-  "module": "libs/tiny-clipbord.es5.js",
+  "main": "libs/tiny-clipboard.umd.js",
+  "mainMin": "libs/tiny-clipboard.umd.min.js",
+  "jsdelivr": "libs/tiny-clipboard.umd.min.js",
+  "unpkg": "libs/tiny-clipboard.umd.min.js",
+  "module": "libs/tiny-clipboard.es5.js",
   "typings": "./index.d.ts",
   "devDependencies": {
     "@babel/core": "^7.0.0",
@@ -25,16 +25,20 @@
     "style-loader": "^0.23.1",
     "typescript": "^4.1.2"
   },
+  "keywords": [
+    "clipboard",
+    "clipbord",
+    "copy"
+  ],
   "scripts": {
     "start": "parcel ./index.html",
     "dev": "npm start",
-    "build": "webpack --config ./build/webpack.dev.js",
     "build:lib": "rollup --config rollup.config.min.js && npm run build:rollup",
     "build:rollup": "rollup -c"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/zxpsuper/tiny-clipbord.git"
+    "url": "git+https://github.com/zxpsuper/tiny-clipboard.git"
   },
   "author": "zxpsuper",
   "license": "ISC"
