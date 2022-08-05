@@ -19,7 +19,7 @@ npm install tiny-clipboard --save
 ```
 
 ```js
-import TinyClipbord from 'tiny-clipbord'
+import TinyClipboard from 'tiny-clipboard'
 
 TinyClipbord.copy(text, callback)
 ```
