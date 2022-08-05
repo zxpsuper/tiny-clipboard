@@ -1,4 +1,4 @@
-# tiny-clipbord
+# tiny-clipboard
 
 ## Introduction
 
@@ -21,7 +21,7 @@ npm install tiny-clipboard --save
 ```js
 import TinyClipboard from 'tiny-clipboard'
 
-TinyClipbord.copy(text, callback)
+TinyClipboard.copy(text, callback)
 ```
 
 or you can use it by script tag
@@ -29,23 +29,23 @@ or you can use it by script tag
 ```html
 <script src="https://unpkg.com/tiny-clipbord@0.0.3/libs/tiny-clipbord.umd.min.js"></script>
 <script>
-   TinyClipbord.copy(text, callback) 
+   TinyClipboard.copy(text, callback) 
 </script>
 ```
 
 ## Methods
 
-- `TinyClipbord.copy(text, callback)`
+- `TinyClipboard.copy(text, callback)`
 
     - text: the text you want to copy
 
     - callback(error ?) After copying successfully it will be run, and when appear error that will throw the error
 
-- `TinyClipbord.getHistory()`
+- `TinyClipboard.getHistory()`
 
     - return String[], the history that you have copied
 
-- `TinyClipbord.clearHistroy()` clear the history
+- `TinyClipboard.clearHistroy()` clear the history
 
 ## Browser Support
 
